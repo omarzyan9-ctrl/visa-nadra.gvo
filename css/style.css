@@ -67,7 +67,7 @@ body {
     position: relative;
 }
 #mainnav .menu>li>a {
-    line-height: 70px;
+    line-height: 45px;
     display: inline-block;
     padding: 0 19.5px;
     color: #fff !important;
@@ -89,4 +89,5 @@ body {
         text-align: center;
     }
 }
+
 
