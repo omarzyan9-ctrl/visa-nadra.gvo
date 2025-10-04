@@ -672,6 +672,85 @@
     color: #fff;
   }
 }
+/* Mobile menu full width stacked */
+@media (max-width: 768px) {
+  .btn-menu {
+    display: block;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+  }
 
+  #mainnav {
+    position: absolute;
+    top: 70px;   /* height of header */
+    left: 0;
+    width: 100%;
+    background: #1d2738;
+    display: none;
+    z-index: 1000;
+  }
+
+  #mainnav.show {
+    display: block;
+  }
+
+  #mainnav .menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* 🔥 Force items to stack vertically */
+  #mainnav .menu > li {
+    display: block !important;   /* override inline-block */
+    float: none !important;      /* remove float */
+    text-align: left;            /* align text left */
+    border-bottom: 1px solid #2d374a;
+  }
+
+  #mainnav .menu > li > a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #mainnav .menu > li > a:hover {
+    background: #116CAB;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  #mainnav .menu {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #mainnav .menu > li {
+    display: block !important;   /* stack vertically */
+    float: none !important;      /* cancel float */
+    width: 100% !important;      /* take full width */
+    border-bottom: 1px solid #2d374a;
+    text-align: left;            /* align text to left */
+  }
+
+  #mainnav .menu > li > a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  #mainnav .menu > li > a:hover {
+    background: #116CAB;
+    color: #fff;
+  }
+}
 
 
